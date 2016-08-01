@@ -1,0 +1,15 @@
+{{!-- {{outlet}} --}}
+
+<table>
+	<caption>Objects</caption>
+	<tr>
+		<th>s.n.</th>
+		<th>object name</th>
+	</tr>
+	{{#each model as |object|}}
+	<tr>
+	<td>{{object.id}}</td>
+		<td>{{object.name}}</td>
+	</tr>
+	{{/each}}
+</table>
