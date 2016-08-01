@@ -5,11 +5,13 @@
 	<tr>
 		<th>s.n.</th>
 		<th>object name</th>
+		<th>object label</th>
 	</tr>
 	{{#each model as |object|}}
 	<tr>
 	<td>{{object.id}}</td>
 		<td>{{object.name}}</td>
+		<td>{{object.label}}</td>
 	</tr>
 	{{/each}}
 </table>

@@ -1,18 +1,21 @@
 import Ember from 'ember';
 
-	let objects = [{
-        id: 1,
-        name: 'Marketing Campaign'
-      }, {
-        id: 2,
-        name: 'Media Plan'
-      }, {
-        id: 3,
-        name: 'Coverage'
-      }, ];
+  // static data was used when not using mirage
+	// let objects = [{
+ //        id: 1,
+ //        name: 'Marketing Campaign'
+ //      }, {
+ //        id: 2,
+ //        name: 'Media Plan'
+ //      }, {
+ //        id: 3,
+ //        name: 'Coverage'
+ //      }, ];
 
 export default Ember.Route.extend({
 	model() {
-    return objects;
+    // return objects;
+    return this.get('store').findAll('object');
   }
+
 });

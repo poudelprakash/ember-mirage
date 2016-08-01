@@ -23,24 +23,27 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
-  this.urlPrefix = '/api/v1';
+  // this.urlPrefix = '/api/v1';
   this.get('/objects/', function() {
     return {
-      objects: [{
-        id: 1,
-        name: 'Marketing Campaign'
+      "objects": [{
+        "id": 1,
+        "name": 'Marketing Campaign',
+        "label": 'Marketing C.'
       }, {
-        id: 2,
-        name: 'Media Plan'
+        "id": 2,
+        "name": 'Media Plan',
+        "label": 'MEDIA PLAN'
       }, {
-        id: 3,
-        name: 'Coverage'
-      }, ]
+        "id": 3,
+        "name": 'Coverage',
+        "label": 'COVERAGE'
+      } ]
     }
   });
   this.get('/objects/:id', function() {
     return {
-      object: {
+      "object": {
         "id": 1,
         "name": "Marketing Campaign",
         "project_id": 0,
