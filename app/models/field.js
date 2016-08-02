@@ -1,9 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-	// id cannot be attr in model
   name: DS.attr(),
-  label: DS.attr(),
-  fields: DS.hasMany('field')
-  
+  trashed: DS.attr(),
+  object: DS.belongsTo('object')
 });

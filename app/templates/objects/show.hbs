@@ -1,2 +1,9 @@
-{{!-- {{outlet}} --}}
-show
+<h1>{{model.name}}</h1>
+
+<div class="">
+  label: {{model.label}}<br>
+  fields:<br>
+  {{#each model.fields as |field|}}
+     {{field.name}} | trashed: {{field.trashed}}<br>
+  {{/each}}
+</div>
