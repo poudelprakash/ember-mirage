@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('objects', function(){
     this.route('edit', {path: ':object_id/edit/'});
     this.route('show', {path: ':object_id/'});
+    this.route('index', {path: '/'});
   });
 });
 
