@@ -6,7 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('objects');
+  this.route('objects', function(){
+    this.route('edit', {path: ':object_id/edit/'});
+    this.route('show', {path: ':object_id/'});
+  });
 });
 
 export default Router;
